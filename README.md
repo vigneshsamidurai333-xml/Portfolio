@@ -1,0 +1,42 @@
+# Vignesh Kumar S — Interactive Portfolio
+
+A responsive React portfolio with dark and light themes, a monochrome portrait, live recreations of three Java internship projects, a recruiter overview, resume download and contact links.
+
+## Run locally
+
+```sh
+npm install
+npm run dev
+```
+
+## Build
+
+```sh
+npm run build
+npm run preview
+```
+
+Vite emits the production website into `dist/`.
+
+## Interactive features
+
+- Arithmetic calculator with validation and division-by-zero handling.
+- Fahrenheit-to-Celsius converter with reference temperatures.
+- Browser-local password generator using `crypto.getRandomValues` and rejection sampling.
+- Searchable quick navigation (`Ctrl/Cmd + K`).
+- Recruiter snapshot and one-page PDF resume download.
+- Interactive resume guide with local, resume-based responses. **This guide does not call a live AI model.** Messages are not stored.
+- Keyboard-accessible dialogs, reduced-motion support, mobile navigation and a persistent theme preference.
+- Suggested follow-up questions and direct email, phone and LinkedIn contact links in the portfolio guide.
+
+The original projects were written in Java during the TechnoHacks EduTech internship in April 2024. These demos are React recreations, not the original Java source code. Portfolio facts come from the supplied resumes; no unverified employment, projects or technology experience has been added.
+
+## Content
+
+Update `src/main.jsx` to edit profile content, contact details, project descriptions and resume-guide answers. Replace `public/assets/Vignesh-Kumar-Resume.pdf` to update the download. Replace `public/assets/profile-photo.png` to update the portrait. It is displayed in a circular frame with monochrome styling.
+
+Inter is self-hosted as a compact WOFF2 font, with its OFL license included. System sans-serif fonts provide a fallback.
+
+Technology logo assets are from [Devicon](https://github.com/devicons/devicon), with the accompanying license in `public/assets/devicon-LICENSE.txt`. Java and Python marks identify the listed technologies.
+
+The loading screen waits for the font and portrait, with a 1.6-second fallback. Headline reveals, floating technology badges, portrait movement and a seamless technology ticker use CSS transforms. Reduced-motion preferences disable animated effects.
